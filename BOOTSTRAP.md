@@ -43,3 +43,6 @@ Copy `.agent/ISSUE_DISCOVERY.md` into the target project during initialization a
 
 ## Goal-first policy required
 Copy `.agent/GOAL_FIRST.md` into the target repository, link it from AGENTS.md and read it on every resume. The Agent must focus on completing the current authorized goal while transparently reporting minor/rare deferred issues in the temporary numbered list; high-impact and acceptance-blocking issues cannot be bypassed.
+
+## Environment troubleshooting memory required (APG v1.2.4)
+During initialization copy `docs/ENVIRONMENT_INCIDENTS.md` and `.agent/ENVIRONMENT_RECOVERY.md` and link them from the target AGENTS.md. During every resume, read the environment incident index before environment troubleshooting; on a failure, search for matching agent/environment/error history before repeating diagnostic actions. Store sanitized incident experience in Git within existing authorized task scope; do not commit secrets or unsafe absolute paths. This is separate from the approval gate for new out-of-scope defects.
