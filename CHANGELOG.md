@@ -8,3 +8,8 @@
 
 ## 1.0.0
 - Initial Issue-first, single-agent, risk-based governance template.
+
+## 1.2.0
+- Port problem registration, failure classification, real test evidence and retry escalation from AI-Dev-Bridge-Lite.
+- Add project-scoped unique dispatch rounds and Git-backed short instruction handoff for arbitrary agents.
+- Keep single-executor default; do not inherit fixed agent roles or automatic execution claims.
