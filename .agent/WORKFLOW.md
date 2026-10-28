@@ -23,3 +23,6 @@
 - Instruction header: `[PREFIX-NNNN][TO:AGENT]`.
 - Each newly delegated actionable instruction receives a new ID, including revisions; connect to parent Issue.
 - Never silently broaden scope; record changes to acceptance criteria before applying them.
+
+## Problem handling and dispatch
+Follow `ISSUE_LIFECYCLE.md` for issue deduplication, failure classification, retry, tested SHA and acceptance. Follow `DISPATCH_PROTOCOL.md` for per-instruction H numbers, recipient identity, Git-backed detailed prompts and idempotent reforwarding. A new instruction can share an Issue but must not reuse an old dispatch ID.
