@@ -1,4 +1,4 @@
-<!-- APG-MANAGED: schema=1 version=1.2.2 -->
+<!-- APG-MANAGED: schema=1 version=1.2.3 -->
 # APG bootstrap and resume
 
 For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
@@ -33,3 +33,6 @@ Maintain `docs/ISSUE_REGISTER.md` alongside canonical GitHub Issues. Every probl
 
 ## New problem discovery gate
 After every execution, report newly discovered out-of-scope repair candidates as a simple temporary numbered list (1, 2, 3...). Wait for the user's explicit selection before creating/updating GitHub issue records and allocating permanent unique IDs. Follow `.agent/ISSUE_DISCOVERY.md`. Existing task evidence must still be recorded normally.
+
+## Goal-first execution
+Prioritize the current authorized objective. Minor-impact or demonstrably rare, bounded, nonblocking issues may be deferred and listed in the final numbered discovery report; serious, safety-critical or acceptance-blocking problems may not be silently skipped. Follow `.agent/GOAL_FIRST.md` and `.agent/ISSUE_DISCOVERY.md`.
