@@ -17,6 +17,7 @@ jobs:
           test -f docs/AI_HANDOFF.md
           test -f docs/PROJECT_STATUS.md
           test -f .agent/SECURITY.md
+          test -f .agent/GIT_SOURCE_OF_TRUTH.md
           if git ls-files .agent-local/ | grep .; then
             echo 'ERROR: private local directory tracked'
             exit 1
