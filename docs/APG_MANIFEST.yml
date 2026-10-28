@@ -1,0 +1,20 @@
+# APG instance manifest template. Fill values during target initialization.
+apg:
+  schema: 1
+  version: "1.1.0"
+  source: "https://github.com/zyzmlwxy/agent-project-governance"
+  source_ref: "PINNED_TAG_OR_COMMIT"
+  initialized_at_utc: "TBD"
+project:
+  repository: "OWNER/REPO"
+  task_prefix: "TBD"
+  default_branch: "main"
+  active_agent: "none"
+  private_paths_contract: "docs/LOCAL_PRIVATE.md"
+governance:
+  entrypoint: "AGENTS.md"
+  handoff: "docs/AI_HANDOFF.md"
+  status: "docs/PROJECT_STATUS.md"
+  task_selection: "docs/TASK_QUEUE.md"
+  security: ".agent/SECURITY.md"
+  local_overrides: "docs/PROJECT_RULES.md"
