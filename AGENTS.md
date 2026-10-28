@@ -1,4 +1,4 @@
-<!-- APG-MANAGED: schema=1 version=1.2.0 -->
+<!-- APG-MANAGED: schema=1 version=1.2.1 -->
 # APG bootstrap and resume
 
 For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
@@ -27,3 +27,6 @@ For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialize
 
 ## Issue and instruction continuity (v1.2)
 Read `.agent/ISSUE_LIFECYCLE.md` before recording, fixing or closing problems; read `.agent/DISPATCH_PROTOCOL.md` before issuing any new agent instruction or handoff. Keep unique dispatch IDs, preserve attempt history and verify real test evidence.
+
+## Nontechnical issue register
+Maintain `docs/ISSUE_REGISTER.md` alongside canonical GitHub Issues. Every problem needs a plain-language description, impact, confirmed or uncertain cause, handling progress, outcome and next step. Read `.agent/templates/ISSUE_PUBLIC.md` for the format. No code, commands, SHA or technical stack traces in the public-facing description.
