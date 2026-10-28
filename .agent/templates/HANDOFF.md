@@ -1,0 +1,11 @@
+# Handoff checkpoint
+- Task ID / Issue:
+- Owner relinquishing:
+- Current branch / SHA:
+- Uncommitted paths:
+- Changes / evidence:
+- Tests passed / failed / skipped:
+- Blockers:
+- Local private paths (no values):
+- Next action:
+- Ownership released:
