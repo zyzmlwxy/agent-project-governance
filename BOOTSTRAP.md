@@ -37,3 +37,6 @@ When initializing a target project, copy `.agent/ISSUE_LIFECYCLE.md`, `.agent/DI
 
 ## Nontechnical issue register required in new projects
 Copy `docs/ISSUE_REGISTER.md` and `.agent/templates/ISSUE_PUBLIC.md` into target projects. For existing projects, preserve any existing nontechnical issue log, reconcile it with open/closed Issues and migrate without losing historical entries. Add the register to the target AGENTS.md reading/maintenance contract. Initialization readiness includes a nontechnical register (it may have no entries for a new project).
+
+## Newly discovered issue approval gate
+Copy `.agent/ISSUE_DISCOVERY.md` into the target project during initialization and link it from AGENTS.md. On every resumed execution, follow its temporary numbered candidate / explicit user confirmation / permanent Issue ID workflow. Do not create new out-of-scope Issues before approval.
