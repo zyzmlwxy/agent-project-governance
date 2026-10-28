@@ -35,3 +35,6 @@ For every tracked problem, maintain a corresponding entry in `docs/ISSUE_REGISTE
 
 ## Newly discovered problems
 Before registering any newly discovered out-of-scope issue, follow `ISSUE_DISCOVERY.md`: first report temporary 1/2/3/4 choices, wait for user confirmation, then deduplicate and assign permanent Issue-based IDs and update `docs/ISSUE_REGISTER.md`. This does not delay reporting failure of the already authorized task.
+
+## Operational incident history
+Environment, access, SSH/NAS, tool and workspace failures during an authorized task must also be captured in `docs/ENVIRONMENT_INCIDENTS.md` under an ENV identifier, including the encountering Agent, environment, safe file path references, attempted fixes and current evidence. Search that history before investigating similar incidents. ENV identifiers are knowledge-base record IDs, not task or dispatch IDs. See `.agent/ENVIRONMENT_RECOVERY.md`.
