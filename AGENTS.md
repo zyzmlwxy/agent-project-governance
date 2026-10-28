@@ -1,3 +1,8 @@
+<!-- APG-MANAGED: schema=1 version=1.1.0 -->
+# APG bootstrap and resume
+
+For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
+
 # APG Agent Entry (v1.0)
 
 ## Mandatory startup
