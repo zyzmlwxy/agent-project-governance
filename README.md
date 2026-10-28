@@ -31,7 +31,7 @@ A reusable, GitHub Issue-first governance template for local projects and AI age
 ## Scope
 This is a starter template, not a complete automation system. Protected task-ID allocation, duplicate detection and full secret scanning are roadmap items. The bundled CI performs only basic checks.
 
-Version: 1.2.1. Project copies are updated through reviewed changes, not automatic overwrites.
+Version: 1.2.2. Project copies are updated through reviewed changes, not automatic overwrites.
 
 ## One-link adoption and agent switching
 
@@ -56,3 +56,7 @@ Adapted from [AI-Dev-Bridge-Lite](https://github.com/zyzmlwxy/AI-Dev-Bridge-Lite
 - [Plain-language issue template](.agent/templates/ISSUE_PUBLIC.md)
 
 Each tracked problem must have a readable summary covering the problem, impact, cause analysis, handling progress, verification and next action. GitHub Issues remain the technical source of truth.
+
+## User-controlled problem intake
+
+[New problem discovery and approval](.agent/ISSUE_DISCOVERY.md): after each execution, the Agent presents newly discovered repair candidates as a short 1/2/3/4 list. Only user-approved items are registered in GitHub and assigned permanent unique task IDs. Recording approval is separate from implementation authorization.
