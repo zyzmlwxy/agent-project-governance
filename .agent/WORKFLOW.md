@@ -7,13 +7,15 @@
 4. Allocate IDs with a single serialized allocator or a protected counter/issue-creation workflow; never compute `max + 1` concurrently. GitHub Issue numbers are intrinsically unique and may be used as the canonical fallback (`PREFIX-GH-<issue_number>`).
 
 ## Execution
+0. Before writing code, read `.agent/GIT_SOURCE_OF_TRUTH.md`, verify current remote default/working branch SHAs and reconcile local changes without discarding any work.
 1. One active execution owner per task; confirm ownership in Issue and check existing branch/PR.
 2. Create a focused branch; protect uncommitted user changes and never force-reset without approval.
-3. Make minimal changes; test according to risk; link commit and PR to Issue.
+3. Make minimal changes; test according to risk; commit and push every shareable source/document/test/config deliverable to the authorized Git remote; verify the remote SHA and files, and link commit and PR to Issue. Intermediate local work is not delivered.
 4. On interruption, checkpoint in `docs/AI_HANDOFF.md` and/or Issue, with SHA, dirty paths, tests, blockers and next action.
 5. For handoff, outgoing owner releases task; incoming owner verifies current remote/local state before taking ownership.
 
 ## Closeout
+- Verify remote read-back and disclose delivery state (`WORKING_LOCAL`, `COMMITTED_LOCAL`, `PUSHED_UNMERGED`, `MERGED_DEFAULT_BRANCH`, or `SYNC_BLOCKED`) with full SHA/branch/PR URL. Do not report a local-only artifact as delivered.
 - Record acceptance evidence and limitations.
 - Distinguish implementation, review, merge, deployment, and online validation.
 - Update project status/handoff on material changes; do not duplicate full Issue content.
