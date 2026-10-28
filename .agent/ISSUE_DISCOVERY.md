@@ -25,3 +25,6 @@ For each candidate: short plain-language symptom, user impact, and a proposed ne
 - A newly discovered security vulnerability, active secret leak, imminent data loss or severe ongoing incident may require an immediate **minimal safety warning** and approved containment procedure. Do not publish sensitive details to a public repository or wait to warn the user. Creating a permanent public Issue still requires user confirmation unless the project's explicit incident policy says otherwise.
 - Existing task failures, required acceptance evidence, and blockers must still be recorded in their **already authorized** Issue/PR as part of normal execution. The approval gate applies to **new out-of-scope problems**, not to suppress truthful reporting of current-task failure.
 - A new user request to perform work is governed by the normal unique dispatch ID rules; temporary discovery numbers must never be used as dispatch IDs.
+
+## Goal-first deferrals
+Follow `.agent/GOAL_FIRST.md`: minor-impact or sufficiently rare bounded issues may be deferred during the current authorized work. Still include **all deferred newly discovered problems** in the same temporary numbered list for the user, with impact, likelihood/uncertainty, deferral reason and next action. Do not auto-register them before confirmation.
