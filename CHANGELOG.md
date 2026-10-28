@@ -13,3 +13,7 @@
 - Port problem registration, failure classification, real test evidence and retry escalation from AI-Dev-Bridge-Lite.
 - Add project-scoped unique dispatch rounds and Git-backed short instruction handoff for arbitrary agents.
 - Keep single-executor default; do not inherit fixed agent roles or automatic execution claims.
+
+## 1.2.1
+- Require a plain-language issue register for nontechnical readers, including cause analysis, impact, resolution and verification.
+- Add a reusable nontechnical problem template and bootstrap requirements.
