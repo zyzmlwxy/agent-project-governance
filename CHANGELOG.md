@@ -31,3 +31,8 @@
 - Add Git-backed environment incident memory with agent identity, environment metadata, attempts and verified recovery.
 - Permit safe local credential-path references but never credential contents; protect identity-bearing absolute paths in public repositories.
 - Require historical incident lookup before repeated troubleshooting and distinguish operational evidence from new Issue approval.
+
+## 1.2.5
+- Make the remote Git repository the authoritative development baseline and require commit, push and read-back verification of all shareable deliverables.
+- Add explicit local / pushed-unmerged / merged / sync-blocked statuses, plus handoff and project-status fields.
+- Clarify that Git synchronization never permits secret disclosure, unapproved writes, or premature new-issue creation.
