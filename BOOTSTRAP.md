@@ -40,3 +40,6 @@ Copy `docs/ISSUE_REGISTER.md` and `.agent/templates/ISSUE_PUBLIC.md` into target
 
 ## Newly discovered issue approval gate
 Copy `.agent/ISSUE_DISCOVERY.md` into the target project during initialization and link it from AGENTS.md. On every resumed execution, follow its temporary numbered candidate / explicit user confirmation / permanent Issue ID workflow. Do not create new out-of-scope Issues before approval.
+
+## Goal-first policy required
+Copy `.agent/GOAL_FIRST.md` into the target repository, link it from AGENTS.md and read it on every resume. The Agent must focus on completing the current authorized goal while transparently reporting minor/rare deferred issues in the temporary numbered list; high-impact and acceptance-blocking issues cannot be bypassed.
