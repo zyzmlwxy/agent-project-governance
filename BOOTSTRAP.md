@@ -31,3 +31,6 @@ Initialization is complete only when the target default branch contains the APG 
 
 ## Compatibility
 No shell, Python, GitHub CLI or specific AI platform is required to understand this protocol. Agents lacking write access produce a proposed patch and ask for an authorized executor; they must not claim initialization completed.
+
+## APG v1.2 additional required rules
+When initializing a target project, copy `.agent/ISSUE_LIFECYCLE.md`, `.agent/DISPATCH_PROTOCOL.md`, `.agent/templates/EXECUTION_REPORT.md` and `.agent/templates/PROBLEM.md` along with the existing core rules. Add links to them in the target AGENTS.md. When resuming, read these files before selecting, dispatching, executing or accepting a task. Existing Issue history and numbering must not be renumbered or erased.
