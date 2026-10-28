@@ -1,0 +1,29 @@
+name: APG task
+description: Track an implementation or maintenance task
+title: "[TASK-ID] "
+labels: ["status:open"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective and scope
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Include observable evidence requirements
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      options: [low, medium, high, critical]
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues, PRs and duplicate search
