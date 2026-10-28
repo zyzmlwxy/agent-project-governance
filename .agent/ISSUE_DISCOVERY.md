@@ -28,3 +28,6 @@ For each candidate: short plain-language symptom, user impact, and a proposed ne
 
 ## Goal-first deferrals
 Follow `.agent/GOAL_FIRST.md`: minor-impact or sufficiently rare bounded issues may be deferred during the current authorized work. Still include **all deferred newly discovered problems** in the same temporary numbered list for the user, with impact, likelihood/uncertainty, deferral reason and next action. Do not auto-register them before confirmation.
+
+## Environment incident distinction (v1.2.4)
+The user confirmation gate applies to **new out-of-scope defects or repair tasks**. Environment/tool/connection failures encountered during an already authorized task are operational evidence and may be appended to its existing Issue/PR and `docs/ENVIRONMENT_INCIDENTS.md` using an approved documentation-write route, without creating a new Issue or allocating a new task ID. Such writeback must never bypass repository permissions. If the incident reveals a separate new defect, include that defect in the temporary numbered user approval list.
