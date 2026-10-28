@@ -1,4 +1,4 @@
-<!-- APG-MANAGED: schema=1 version=1.1.0 -->
+<!-- APG-MANAGED: schema=1 version=1.2.0 -->
 # APG bootstrap and resume
 
 For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
@@ -24,3 +24,6 @@ For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialize
 - No destructive operation, production deployment or privilege change without applicable authorization.
 - Single active execution owner per task; handoff explicitly releases ownership.
 - Follow `.agent/` rules and project-specific `docs/PROJECT_RULES.md`.
+
+## Issue and instruction continuity (v1.2)
+Read `.agent/ISSUE_LIFECYCLE.md` before recording, fixing or closing problems; read `.agent/DISPATCH_PROTOCOL.md` before issuing any new agent instruction or handoff. Keep unique dispatch IDs, preserve attempt history and verify real test evidence.
