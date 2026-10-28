@@ -31,7 +31,7 @@ A reusable, GitHub Issue-first governance template for local projects and AI age
 ## Scope
 This is a starter template, not a complete automation system. Protected task-ID allocation, duplicate detection and full secret scanning are roadmap items. The bundled CI performs only basic checks.
 
-Version: 1.2.3. Project copies are updated through reviewed changes, not automatic overwrites.
+Version: 1.2.4. Project copies are updated through reviewed changes, not automatic overwrites.
 
 ## One-link adoption and agent switching
 
@@ -64,3 +64,10 @@ Each tracked problem must have a readable summary covering the problem, impact, 
 ## Goal-first execution
 
 [Goal-first and proportional deferral policy](.agent/GOAL_FIRST.md): finish the authorized goal before chasing nonblocking minor or rare issues; transparently list all deferred findings for user confirmation. Never silently bypass required acceptance, data integrity or security checks.
+
+## Environment failure memory
+
+- [Environment incident register](docs/ENVIRONMENT_INCIDENTS.md)
+- [Prior-fix-first troubleshooting protocol](.agent/ENVIRONMENT_RECOVERY.md)
+
+Agents record which executor encountered a problem, its environment, safe local path references (including SSH key locations), sanitized failures and verified solutions. Before troubleshooting a similar failure, search this history. Secret contents must never enter Git; independent new defects still require user confirmation.
