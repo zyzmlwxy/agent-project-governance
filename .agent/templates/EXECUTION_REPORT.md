@@ -1,0 +1,18 @@
+# Execution report
+- Dispatch ID:
+- Issue / PR:
+- Attempt: 1
+- Tested commit SHA (40 hex characters or NOT_TESTED):
+- Current PR HEAD:
+- Environment / toolchain:
+- Build: PASS / FAIL / BLOCKED / N/A / NOT RUN
+- Actual build command / exit code:
+- Tests: PASS / FAIL / BLOCKED / N/A / NOT RUN
+- Actual test command / exit code:
+- Failure category: NONE / CODE / TEST / ENVIRONMENT / PERMISSION / DEPENDENCY / UNKNOWN
+- Sanitized evidence / URL:
+- Deployment: NOT ATTEMPTED / authorized result
+- Overall: PASS / FAIL / BLOCKED / UNKNOWN
+- Retry reason:
+- Remaining blockers:
+- Next actor / action:
