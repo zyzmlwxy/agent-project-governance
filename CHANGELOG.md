@@ -17,3 +17,7 @@
 ## 1.2.1
 - Require a plain-language issue register for nontechnical readers, including cause analysis, impact, resolution and verification.
 - Add a reusable nontechnical problem template and bootstrap requirements.
+
+## 1.2.2
+- Require user confirmation before newly discovered out-of-scope issues are added to GitHub.
+- Use temporary 1/2/3/4 choices; allocate permanent unique IDs after confirmation and deduplication.
