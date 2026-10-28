@@ -1,4 +1,4 @@
-# Agent Project Governance (APG) · v1.0
+# Agent Project Governance (APG) · v1.1
 
 A reusable, GitHub Issue-first governance template for local projects and AI agents.
 
@@ -31,4 +31,12 @@ A reusable, GitHub Issue-first governance template for local projects and AI age
 ## Scope
 This is a starter template, not a complete automation system. Protected task-ID allocation, duplicate detection and full secret scanning are roadmap items. The bundled CI performs only basic checks.
 
-Version: 1.0.0. Project copies are updated through reviewed changes, not automatic overwrites.
+Version: 1.1.0. Project copies are updated through reviewed changes, not automatic overwrites.
+
+## One-link adoption and agent switching
+
+**Initialize:** Give an agent your new repository URL and say: "Initialize using [APG BOOTSTRAP.md](BOOTSTRAP.md); verify default-branch readiness."
+
+**Resume:** Give any agent the initialized repository URL and say: "Read AGENTS.md, recover live context and execute the next authorized task."
+
+See [Adoption guide](docs/ADOPTION.md), [Manifest template](docs/APG_MANIFEST.yml), and [Task selection policy](docs/TASK_QUEUE.md). Initialization is complete only after merge into the target default branch. Agents without write access can prepare a patch but cannot complete setup.
