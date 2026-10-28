@@ -1,7 +1,7 @@
 # APG instance manifest template. Fill values during target initialization.
 apg:
   schema: 1
-  version: "1.2.4"
+  version: "1.2.5"
   source: "https://github.com/zyzmlwxy/agent-project-governance"
   source_ref: "PINNED_TAG_OR_COMMIT"
   initialized_at_utc: "TBD"
@@ -17,4 +17,5 @@ governance:
   status: "docs/PROJECT_STATUS.md"
   task_selection: "docs/TASK_QUEUE.md"
   security: ".agent/SECURITY.md"
+  git_source_of_truth: ".agent/GIT_SOURCE_OF_TRUTH.md"
   local_overrides: "docs/PROJECT_RULES.md"
