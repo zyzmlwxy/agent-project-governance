@@ -1,0 +1,18 @@
+# Problem / issue record
+- Task ID:
+- Priority / risk:
+- Owner / status:
+- Affected version / commit SHA:
+- Evidence grade: VERIFIED / USER_REPORTED / UNKNOWN / BLOCKED
+- Environment (sanitized):
+- Related issues / PRs / duplicate search:
+- Symptom and reproducible steps:
+- Expected behavior:
+- Actual behavior:
+- Impact / scope:
+- Suspected cause (clearly marked hypothesis):
+- Acceptance criteria:
+- Dependencies:
+- Attempt history (link each attempt, do not erase):
+- Latest verified result:
+- Next action:
