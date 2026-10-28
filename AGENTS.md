@@ -1,4 +1,4 @@
-<!-- APG-MANAGED: schema=1 version=1.2.3 -->
+<!-- APG-MANAGED: schema=1 version=1.2.4 -->
 # APG bootstrap and resume
 
 For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
@@ -36,3 +36,6 @@ After every execution, report newly discovered out-of-scope repair candidates as
 
 ## Goal-first execution
 Prioritize the current authorized objective. Minor-impact or demonstrably rare, bounded, nonblocking issues may be deferred and listed in the final numbered discovery report; serious, safety-critical or acceptance-blocking problems may not be silently skipped. Follow `.agent/GOAL_FIRST.md` and `.agent/ISSUE_DISCOVERY.md`.
+
+## Environment incidents and prior-fix-first recovery
+Before diagnosing connection, SSH/NAS, permission, tool or workspace failures, search `docs/ENVIRONMENT_INCIDENTS.md`, `docs/LOCAL_PRIVATE.md`, existing Issues/PRs and execution reports. Follow `.agent/ENVIRONMENT_RECOVERY.md`. For incidents within authorized work, record the encountering Agent, environment, sanitized symptoms, attempts and resolution in Git using authorized documentation writes. Local key file paths may be referenced subject to repository visibility and privacy; never commit key material, passphrases or tokens. New out-of-scope feature defects still require user confirmation.
