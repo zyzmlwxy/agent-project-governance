@@ -21,3 +21,8 @@
 ## 1.2.2
 - Require user confirmation before newly discovered out-of-scope issues are added to GitHub.
 - Use temporary 1/2/3/4 choices; allocate permanent unique IDs after confirmation and deduplication.
+
+## 1.2.3
+- Prioritize current authorized goal over nonblocking minor or rare edge cases.
+- Require transparent reporting of all deferred issues in the temporary numbered discovery list.
+- Preserve safety, acceptance and explicit user approval boundaries.
