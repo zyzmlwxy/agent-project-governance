@@ -26,3 +26,8 @@
 - Prioritize current authorized goal over nonblocking minor or rare edge cases.
 - Require transparent reporting of all deferred issues in the temporary numbered discovery list.
 - Preserve safety, acceptance and explicit user approval boundaries.
+
+## 1.2.4
+- Add Git-backed environment incident memory with agent identity, environment metadata, attempts and verified recovery.
+- Permit safe local credential-path references but never credential contents; protect identity-bearing absolute paths in public repositories.
+- Require historical incident lookup before repeated troubleshooting and distinguish operational evidence from new Issue approval.
