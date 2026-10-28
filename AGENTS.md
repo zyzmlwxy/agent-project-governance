@@ -1,4 +1,4 @@
-<!-- APG-MANAGED: schema=1 version=1.2.4 -->
+<!-- APG-MANAGED: schema=1 version=1.2.5 -->
 # APG bootstrap and resume
 
 For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialized project, follow its own root AGENTS.md, manifest, security and task-selection rules. Do not assume central repository permissions apply to target repositories.
@@ -13,6 +13,7 @@ For a target project URL, follow [BOOTSTRAP.md](BOOTSTRAP.md). For an initialize
 5. Summarize confirmed state, uncertainty, current task, plan and permissions.
 
 ## Source of truth
+- **Mandatory**: follow `.agent/GIT_SOURCE_OF_TRUTH.md` throughout development. Every non-secret in-scope source file and deliverable must be committed, pushed and independently verified on the authorized project Git remote before being reported as delivered; local-only edits, commits, ZIPs or chat output are not durable delivery.
 - GitHub Issues: tasks and acceptance criteria.
 - Git history/PRs: code changes and reviews.
 - Actual tests/deployment evidence: verified behavior.
