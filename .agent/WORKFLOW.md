@@ -26,3 +26,6 @@
 
 ## Problem handling and dispatch
 Follow `ISSUE_LIFECYCLE.md` for issue deduplication, failure classification, retry, tested SHA and acceptance. Follow `DISPATCH_PROTOCOL.md` for per-instruction H numbers, recipient identity, Git-backed detailed prompts and idempotent reforwarding. A new instruction can share an Issue but must not reuse an old dispatch ID.
+
+## Delivery priority
+Apply `.agent/GOAL_FIRST.md` while implementing: finish the currently approved objective before pursuing unrelated low-impact issues, unless a safety or acceptance gate requires escalation. Report all deferred issues after execution using `.agent/ISSUE_DISCOVERY.md`.
