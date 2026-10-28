@@ -11,3 +11,6 @@ Risk levels:
 Risk is determined by impact, reversibility, exposure and uncertainty. Highest applicable risk wins. Agent cannot downgrade risk to bypass approval.
 
 Never place secrets in GitHub, logs or AI handoffs. Stop and escalate when a secret leak is suspected. Prefer least privilege and redact all evidence.
+
+## Credential file locations versus contents
+Documenting a credential file's location is distinct from publishing its contents. Safe project-relative paths or variable names may be recorded for troubleshooting; identity-bearing or sensitive absolute paths require repository visibility review and should remain in ignored local files. Never commit credential bytes, passphrases, tokens or secret-bearing configuration. A recorded path never grants authorization to access or use a credential.
