@@ -1,9 +1,9 @@
-# Agent Project Governance (APG) · v1.1
+# Agent Project Governance (APG) · v1.2.5
 
 A reusable, GitHub Issue-first governance template for local projects and AI agents.
 
 ## Principles
-- GitHub Issues are the canonical task register; commits and PRs document implementation.
+- GitHub Issues are the canonical task register; **verified remote Git commits and PRs are mandatory for all shareable project deliverables**.
 - One active execution agent per task; sequential handoffs must be explicit.
 - New agents recover context from repository evidence, not chat memory.
 - Verification and deployment approvals are risk-based.
@@ -31,7 +31,7 @@ A reusable, GitHub Issue-first governance template for local projects and AI age
 ## Scope
 This is a starter template, not a complete automation system. Protected task-ID allocation, duplicate detection and full secret scanning are roadmap items. The bundled CI performs only basic checks.
 
-Version: 1.2.4. Project copies are updated through reviewed changes, not automatic overwrites.
+Version: 1.2.5. Project copies are updated through reviewed changes, not automatic overwrites.
 
 ## One-link adoption and agent switching
 
@@ -71,3 +71,7 @@ Each tracked problem must have a readable summary covering the problem, impact, 
 - [Prior-fix-first troubleshooting protocol](.agent/ENVIRONMENT_RECOVERY.md)
 
 Agents record which executor encountered a problem, its environment, safe local path references (including SSH key locations), sanitized failures and verified solutions. Before troubleshooting a similar failure, search this history. Secret contents must never enter Git; independent new defects still require user confirmation.
+
+## Mandatory Git-first development and delivery
+
+Read [Git source of truth and synchronization policy](.agent/GIT_SOURCE_OF_TRUTH.md). Every authorized, non-secret source, test, script, configuration and project documentation deliverable must be committed, pushed and verified on the **project's** Git remote. Local-only work, a local commit and a ZIP/chat response do not count as delivered; unmerged branches/PRs must be identified as such. Secrets and machine-only data are not uploadable. If synchronization is blocked, state `SYNC_BLOCKED` instead of asserting completion.
