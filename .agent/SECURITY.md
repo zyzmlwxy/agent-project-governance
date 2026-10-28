@@ -14,3 +14,6 @@ Never place secrets in GitHub, logs or AI handoffs. Stop and escalate when a sec
 
 ## Credential file locations versus contents
 Documenting a credential file's location is distinct from publishing its contents. Safe project-relative paths or variable names may be recorded for troubleshooting; identity-bearing or sensitive absolute paths require repository visibility review and should remain in ignored local files. Never commit credential bytes, passphrases, tokens or secret-bearing configuration. A recorded path never grants authorization to access or use a credential.
+
+## Mandatory sync does not override security
+`.agent/GIT_SOURCE_OF_TRUTH.md` requires all **shareable** deliverables in Git. Secret keys, tokens, passwords, sensitive absolute paths and unapproved private content must never be pushed just to satisfy delivery. If safe publication cannot be verified, stop that write and report `SYNC_BLOCKED`; request an approved private destination or safe redaction strategy.
