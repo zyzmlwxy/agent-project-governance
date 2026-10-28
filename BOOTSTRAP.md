@@ -34,3 +34,6 @@ No shell, Python, GitHub CLI or specific AI platform is required to understand t
 
 ## APG v1.2 additional required rules
 When initializing a target project, copy `.agent/ISSUE_LIFECYCLE.md`, `.agent/DISPATCH_PROTOCOL.md`, `.agent/templates/EXECUTION_REPORT.md` and `.agent/templates/PROBLEM.md` along with the existing core rules. Add links to them in the target AGENTS.md. When resuming, read these files before selecting, dispatching, executing or accepting a task. Existing Issue history and numbering must not be renumbered or erased.
+
+## Nontechnical issue register required in new projects
+Copy `docs/ISSUE_REGISTER.md` and `.agent/templates/ISSUE_PUBLIC.md` into target projects. For existing projects, preserve any existing nontechnical issue log, reconcile it with open/closed Issues and migrate without losing historical entries. Add the register to the target AGENTS.md reading/maintenance contract. Initialization readiness includes a nontechnical register (it may have no entries for a new project).
